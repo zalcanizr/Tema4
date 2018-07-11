@@ -9,7 +9,7 @@ public class Director  extends  Gerente{
     public Director(double salario, String nombre, String fechaNacimiento, String departamento,String matricula) {
         super(salario, nombre, fechaNacimiento, departamento);
         this.matricula=matricula;
-        this.incrementarSalario();
+        this.incrementarSalario(1.10,100);
 
     }
 
@@ -22,8 +22,8 @@ public class Director  extends  Gerente{
         this.matricula = matricula;
     }
 
-    @Override
-    protected void incrementarSalario(){
-        setSalario(getSalario()*1.10+100);
+
+    public void incrementarSalario(double incremento,double incentivo){
+        setSalario(incrementarSalario(incremento)+incentivo);
     }
 }

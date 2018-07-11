@@ -12,8 +12,8 @@ public class Main {
 
 
 
-        Empleado empleado= new Empleado(1000,"Gustavo","04/05/1983");
-        Gerente gerente= new Gerente(1000,"Gustavo","04/05/1983","TIC");
+        Empleado empleado= new Empleado(1000,"Pedro","04/05/1983");
+        Gerente gerente= new Gerente(1000,"Antonio","04/05/1983","TIC");
         Director director =new Director(1000,"Gustavo","04/05/1983","TIC","HSH1234");
 
         Empleado[] empleados={empleado,gerente,director};

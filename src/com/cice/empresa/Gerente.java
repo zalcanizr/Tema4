@@ -8,7 +8,7 @@ public class Gerente extends  Empleado{
     public Gerente(double salario, String nombre, String fechaNacimiento, String departamento) {
         super(salario, nombre, fechaNacimiento);
         this.departamento = departamento;
-        this.incrementarSalario();
+        this.incrementarSalario(1.05);
     }
 
     public String getDepartamento() {
@@ -19,9 +19,10 @@ public class Gerente extends  Empleado{
         this.departamento = departamento;
     }
 
-    protected void incrementarSalario(){
-
-        this.setSalario(this.getSalario()*1.05);
+    public double incrementarSalario(double incremento){
+        double salarioIncrementado= this.getSalario()*incremento;
+        this.setSalario(salarioIncrementado);
+        return salarioIncrementado;
     }
 
     public void incrementarSalarioOpcionB(double salario){
